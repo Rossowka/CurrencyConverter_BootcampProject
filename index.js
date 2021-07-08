@@ -21,3 +21,12 @@ function currencyExchange(exchangeRate) {
         inputConverted.value = (userInput * exchangeRate).toFixed(2);
     }
 }
+
+async function getCurrency() {
+    let response = await fetch(`https://api.nbp.pl/api/exchangerates/rates/a/${currency}/`);
+    let json = await response.json();
+    let outcome = await json.rates[0].mid
+    const exchangeRate = outcome;
+
+    currencyExchange(exchangeRate)
+}
