@@ -30,3 +30,5 @@ async function getCurrency() {
 
     currencyExchange(exchangeRate)
 }
+
+convertBtn.addEventListener('click', getCurrency)
