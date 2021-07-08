@@ -5,11 +5,11 @@ const inputConverted = document.getElementById('input-converted');
 
 let currency = currencySelector.value
 
-currencySelector.addEventListener('change', currencyValue)
-
 const currencyValue = function () {
     currency = this.value;
 }
+
+currencySelector.addEventListener('change', currencyValue)
 
 function currencyExchange(exchangeRate) {
     const userInput = inputAmount.value;
