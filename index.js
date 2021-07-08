@@ -5,3 +5,8 @@ const inputConverted = document.getElementById('input-converted');
 
 let currency = currencySelector.value
 
+currencySelector.addEventListener('change', currencyValue)
+
+const currencyValue = function () {
+    currency = this.value;
+}
