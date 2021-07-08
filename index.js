@@ -10,3 +10,14 @@ currencySelector.addEventListener('change', currencyValue)
 const currencyValue = function () {
     currency = this.value;
 }
+
+function currencyExchange(exchangeRate) {
+    const userInput = inputAmount.value;
+    if (currency === 'eur') {
+        inputConverted.value = (userInput * exchangeRate).toFixed(2);
+    } else if (currency === 'chf') {
+        inputConverted.value = (userInput * exchangeRate).toFixed(2);
+    } else if (currency === 'usd') {
+        inputConverted.value = (userInput * exchangeRate).toFixed(2);
+    }
+}
