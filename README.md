@@ -1,7 +1,7 @@
 # Bootcamp Project #4
 ## Module: JavaScript
 
-The Currency Converter is meant to convert Polish Złoty (PLN) into one of three currencies:
+The Currency Converter is meant to convert git one of three currencies into Polish Złoty (PLN):
 - EUR
 - USD
 - CHF
